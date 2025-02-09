@@ -1,5 +1,5 @@
 <?php
-echo "<!DOCTYPE html>
+echo '<!DOCTYPE html>
 <html lang="en-US">
     <head>
         <link href="STYLESHEET.css" rel="stylesheet" />
@@ -9,12 +9,14 @@ echo "<!DOCTYPE html>
     </head>
     <body>
 
-        <header></header>
+        <header>
+            <h1>Time Report</h1>
+        </header>
 
         <main>
-            
+            <p>Hi there! It is currently TIME. MESSAGE.</p>
         </main>
 
     </body>
-</html>"
+</html>';
 ?>
