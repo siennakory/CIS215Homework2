@@ -8,7 +8,9 @@ if (($time < 12) && ($time >= 1)){
     $message = ("Hi there! It is currently " . $time . ":00. Good afternoon!");
 } elseif (($time >= 19) && ($time <= 24)) {
     $message = ("Hi there! It is currently " . $time . ":00. Good night!");
-};
+} else {
+    $message = "It seems I don't have a valid time. Please input a valid time between 1 and 24!"
+}
 
 
 echo '<!DOCTYPE html>
