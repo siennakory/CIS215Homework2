@@ -1,1 +1,20 @@
-# This is your HTML/PHP file. Delete this comment, and then get started according to the instructions!
+<?php
+echo "<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link href="STYLESHEET.css" rel="stylesheet" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>TITLE</title>
+    </head>
+    <body>
+
+        <header></header>
+
+        <main>
+            
+        </main>
+
+    </body>
+</html>"
+?>
