@@ -1,8 +1,19 @@
 <?php
+$time = 16;
+$message = "";
+
+if (($time < 12) && ($time >= 1)){
+    $message = ("Hi there! It is currently " . $time . ":00. Good morning!");
+} elseif (($time >= 12) && ($time < 19)){
+    $message = ("Hi there! It is currently " . $time . ":00. Good afternoon!");
+} elseif (($time >= 19) && ($time <= 24)) {
+    $message = ("Hi there! It is currently " . $time . ":00. Good night!");
+};
+
+
 echo '<!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <link href="STYLESHEET.css" rel="stylesheet" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>TITLE</title>
@@ -14,7 +25,7 @@ echo '<!DOCTYPE html>
         </header>
 
         <main>
-            <p>Hi there! It is currently TIME. MESSAGE.</p>
+            <p>' . $message . '</p>
         </main>
 
     </body>
